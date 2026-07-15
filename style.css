@@ -7,45 +7,40 @@
 
 body{
     background-color: #0b0f12;
-    color: #152b1e;
+    color: #09a84b;
     padding: 20px;
     background-image: radial-gradient(#15221a 1px);
-    max-width: auto;
     margin: 0 auto;
 }
-
 /* I'm still searching what this does 07-15 */
 .contaienr {
     width: 90%;
 }
+/* This does nothing since i dont have header on index.html */
 header{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
-/* I used height: auto; and max-width: 100%; to make the image responsive */
-/*.image1{
-    height: auto;
-    object-fit: cover;
-    object-position: center; 
-    min-height: 100vh; 
-}*/
 .image1 {
-    width: 100vw;              /* Full viewport width */
+    object-fit: cover;         /* Covers area, maintains aspect ratio */
+    object-position: center;   /* Keeps image centered */
+    position: fixed;           /* Stays in place when scrolling */
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.image2{
+   width: 100vw;              /* Full viewport width */
     height: 100vh;             /* Full viewport height */
     object-fit: cover;         /* Covers area, maintains aspect ratio */
     object-position: center;   /* Keeps image centered */
     position: fixed;           /* Stays in place when scrolling */
     top: 0;
     left: 0;
-    z-index: -1;               /* Behind other content */
+    z-index: -1;
 }
-.image2{
-    padding: 1%;
-    height: auto;
-    max-width: 100%;
-}
-
+/* this also does nothing yet */
 .arcade-header{
     justify-content: space-between;
     display: flex;
@@ -54,30 +49,78 @@ header{
     margin-bottom: 20px;
     padding-bottom: 10px;
 }
+/* Align the navbar items to the right side of the page */
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* push items to the right (this is important) */
+    gap: 8px;
+    align-items: center;
+    padding: 10px 0;
+}
+/* ensure navbar is above the image */
+.navbar{
+    position: relative;
+    z-index: 2;
+}
 .nav-tab{
     padding: 0%;
     border-radius: 10px;
     border: #3b302d;
-    border-bottom: 10px;
-
+    border-bottom: 10px; 
 }
 .nav-tab.active{
     background-color: #ff3300;
     text-align: right;
     font-weight: bold;
-    padding: 8px 16px;
+    padding: 20px;
     border-radius: 10px;
-    color: #0b0f12; 
-
+    color: #f3f0f0; 
+    border-bottom: 10px;
 }
-
+.nav-tab.active1{
+    background-color: #ff3300;
+    text-align: right;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    color: #f3f0f0; 
+    border-bottom: 10px;  
+}
+.nav-tab.active2{
+    background-color: #ff3300;
+    text-align: right;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    color: #f3f0f0; 
+    border-bottom: 10px;  
+}
+.nav-tab.active3{
+    background-color: #ff3300;
+    text-align: right;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    color: #f3f0f0; 
+    border-bottom: 10px;  
+}
+.nav-tab.active4{
+    background-color: #ff3300;
+    text-align: right;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    color: #f3f0f0; 
+    border-bottom: 10px;  
+}
 .navbar a{
-    color: #000000;
+    color: #f3f0f0;
     text-decoration: none;
     padding: 20px;
     text-align: right;
     text-shadow: none;
-    
+    background-color: #4d3737;
 }
 .nav-tab {
     padding: 8px 16px;
@@ -91,8 +134,7 @@ header{
     text-align: right;
 }
 .navbar a:hover{
-    background-color: #747211;
-
+    background-color: #ff3300;
 }
  /* I will come back to this later (07-15) */
 @media (max-width: 768px) {
