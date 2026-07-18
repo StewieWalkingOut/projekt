@@ -172,7 +172,9 @@ section{
     border-radius: 8px;
     margin-bottom: 12px;
     white-space: pre-wrap; /* allow wrapping inside <pre> */
+    text-align: center;
 }
+
 .buttons{
     display: flex;
     gap: 12px;
