@@ -11,9 +11,9 @@ body{
     padding: 20px;
     background-image: radial-gradient(#15221a 1px);
     margin: 0 auto;
-    min-height: 100vh; /* ensure body fills viewport */
+    min-height: 100vh;
     display: flex;
-    flex-direction: column; /* stack nav, image, section vertically */
+    flex-direction: column;
 }
 .image1 {
     display: block;
@@ -45,6 +45,37 @@ body{
     position: relative;
     z-index: 1;
 }
+.image3 {
+    width: 45%;
+    height: auto;
+    max-height: 900px;
+    border: 6px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    object-fit: cover;
+    object-position: center;
+}
+
+.text2 {
+    width: 45%;
+    color: #f3f0f0;
+    background: rgba(11,15,18,0.6);
+    padding: 12px 16px;
+    border-radius: 8px;
+}
+
+.content-row {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1950px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
 /* Align the navbar items to the right side of the page */
 .navbar{
     position: fixed;
@@ -156,7 +187,8 @@ section{
     text-align: center;
     width: 100%;
     max-width: 1000px;
-    padding: 20px;
+    padding: 30px;
+    margin: 0 auto;
 }
 .h{
     margin-top: 20px;
@@ -190,7 +222,6 @@ section{
     position: relative;
     z-index: 2;
     }
-
 
  /* I will come back to this later (07-15) */
 @media (max-width: 768px) {
