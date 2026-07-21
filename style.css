@@ -120,6 +120,9 @@ body{
 .buttons a:hover{
     background-color: #ff3300;
 }
+.nav-tab a:hover{
+    background-color: #ff3300;
+}
 .buttons a{
     padding: 0%;
     border-radius: 10px;
